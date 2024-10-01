@@ -1,13 +1,12 @@
-import Routing from "./Components/Routing.tsx"
-
+import UI from './A. Components/UI'
+import Nav from './A. Components/Nav';
 function App() {
-  document.title = "TDL Customize and Extra Ft."
-
-  return (
-  <>
-  <Routing />
-  </>
+  return(
+    <>  
+    <Nav />
+    <UI />
+    </>
   )
 }
 
-export default App
+export default App;
