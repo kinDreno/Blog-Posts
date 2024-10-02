@@ -5,13 +5,15 @@ to prepare for our upcoming project that we are going to
 implement someday. 
 <hr>
 <p>Programming Languages and Tools:</p>
-<div style="display: block;">
-- Typescript
+
 - React.tsx
+- Node
 - NPM
+- Typescript
 - React Query
 - Next.js
-</div>
+- Tailwind
+
 <hr>
 
 - [x] Routing Parts
