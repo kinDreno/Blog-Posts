@@ -39,7 +39,9 @@ export default function UI() {
         {/* Main Section OF THE SHIT */}
         <section className="w-full h-full flex justify-center ">
           <article className="w-[80%] flex border-2 border-slate-800 rounded-lg">
-            <section className="w-full grow"></section>
+            <section className="w-full grow">
+              {/* RIGHT SIDE OF THE CONTENT.. */}
+            </section>
             <section className="w-[30em] border-l-2 border-slate-800 block">
 
           <Content /> {/* THIS IS THE CONTENT IN THE UI ON THE LEFT SIDE */}
@@ -47,6 +49,8 @@ export default function UI() {
           </article>
         </section>
       </main>
+
+      {/* ROUTING */}
     </>
   );
 }

@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Write from "./Write";
 
 export default function Nav() {
     const Logo: React.ReactNode = (
-            <div className="flex items-center">
+            <Link to="/"><div className="flex items-center">
             <img className="mr-2 h-[45px]" src="/eye.svg" alt="Logo" />
             <p className="font-bold text-[20px]">P&P</p>
-        </div>);
+        </div></Link>);
 
     return (
         <>
@@ -18,9 +20,10 @@ export default function Nav() {
                     <ul className="flex space-x-8">
                         {[
                             ['About Us', '/about'],
-                            ['Join Us', '/team'],
-                            ['Write', '/projects']
+                            ['Join Us', '/make-account'],
+                            ['Write', '/write']
                         ].map(([title, url], index) => {
+                            console.log(url)
                             return (
                                 <li
                                     key={index}
@@ -37,6 +40,10 @@ export default function Nav() {
 
                 </div>
             </nav>
+            <Routes>
+            <Route path="/write" element={<Write />}/>
+            <Route path="*" element={<h1>Not Found!</h1>}/>
+            </Routes>
         </>
     );
 }
