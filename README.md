@@ -1,12 +1,15 @@
-<h1> I am constructing a project that I call **Peruse & Pertake** which is a blog posting website wherein users can share their thoughts and let people read it!</h1>
+<h1> I am constructing a project that I call **Peruse & Partake** wherein people can post their thoughts. I took the inspiration of this project from <b>Medium</b>. </h1>
 <br> 
-This project is already finished. This is just a front-end practice that I made.
+This is not finished yet! This project is one of my practices,
+to prepare for our upcoming project that we are going to 
+implement someday in our organization. 
 <hr>
-<p>Tech Stacks:</p>
+<p>Programming Languages and Tools:</p>
 - Typescript
 - React.tsx
 - NPM
-- Tailwind
+- Node
+- Next.js
 <hr>
 
 - [x] Routing Parts
