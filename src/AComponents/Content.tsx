@@ -22,8 +22,8 @@ function Content() {
       {
         user: "Dreno", // Add user property
         userPosts: [{image: images[2],
-            title: "Smoking is free, being ignorant is free as well.",
-            caption: "Can't people throw their cigarettes in trashbins?",
+            title: "Smoking is free, being ignorant is...",
+            caption: "Can't people who smokes, throw their cigarettes in trashbins?",
             starred: 0,
             starThis: () => {}}]
           }]; // THESE ARE JUST THE EXAMPLES OF THE DATA THAT I DID MANUALLY 

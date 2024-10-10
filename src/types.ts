@@ -4,17 +4,22 @@ age?: number | null;
 filteredFavorites?: string | null;
 }
 
-export type Contents = {
-    image?: string;
-    title: string
-    caption: string
-    starred: number;
-    starThis?: () => void
-}
+
 
 export type User = {
 user: string
 userPosts: Contents[]
 }
 
+export interface Contents {
+    title: string;
+    caption: string;
+    starred: number;
+    genre: string[];
+  }
+  
+  export interface Options {
+    genre: string;
+    value: string;
+  }
 // this file for type storage

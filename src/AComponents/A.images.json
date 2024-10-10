@@ -3,5 +3,8 @@
         "/waffenics.jpeg",
         "/aliceguo.jpg",
         "/apos.jpg"
+    ],
+    "error": [
+        "/notfound.webp"
     ]
 }

@@ -11,7 +11,7 @@ export default function Nav() {
 
     return (
         <>
-            <nav className="z-10 flex justify-around fixed backdrop-blur-lg w-screen h-[5em] items-center border-b-1 shadow-md border-black">
+            <nav className="flex justify-around fixed backdrop-blur-lg w-screen h-[5em] items-center border-b-1 shadow-md border-black">
                 <div>
                     {Logo}
                 </div>
@@ -23,7 +23,6 @@ export default function Nav() {
                             ['Join Us', '/make-account'],
                             ['Write', '/write']
                         ].map(([title, url], index) => {
-                            console.log(url)
                             return (
                                 <li
                                     key={index}

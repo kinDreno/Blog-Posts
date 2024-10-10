@@ -1,18 +1,23 @@
-import Nav from './A. Components/Nav';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { Main } from './AC. Routes/Routing';
+import Nav from './AComponents/Nav';
+import { Routes, Route, useLocation, useMatch } from 'react-router-dom';
+import { Main, ErrorHandle } from './AC. Routes/Routing';
+import { useState } from 'react';
+import { Contents } from './types'; // Import your Contents type
 
 function App() {
   const location = useLocation();
+  const isNotFound = useMatch('/404');
+  const [posts, setPosts] = useState<Contents[]>([]); // State to hold posts
+
+  console.log("Current path:", location.pathname);
 
   return (
     <>
-      {/* Only render Nav if the current route is not the 404 page */}
-      {location.pathname !== "*" && <Nav />}
-      
+      {!isNotFound && <Nav />}
       <Routes>
-        <Route path="/*" element={<Main />} />
-        <Route path="*" element={<h1>YOU WENT TO THE WRONG WEBPAGE!! 404</h1>} />
+        <Route path="/*" element={<Main posts={posts} setPosts={setPosts} />} />
+        <Route path="/404" element={<ErrorHandle />} />
+        <Route path="*" element={<ErrorHandle />} />
       </Routes>
     </>
   );
