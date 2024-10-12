@@ -53,11 +53,3 @@ export function App() {
     </div>
   );
 }
-
-export function FetchingAPIPractice() {
-
- 
-
-
-  
-}
