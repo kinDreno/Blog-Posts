@@ -1,6 +1,6 @@
 import UI from "../AComponents/UI";
 import Write from "../AComponents/Write";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { Contents } from '../types'; 
 
 interface MainProps {
