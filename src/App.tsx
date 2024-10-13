@@ -2,7 +2,7 @@ import Nav from './AComponents/Nav';
 import { Routes, Route, useLocation, useMatch } from 'react-router-dom';
 import { Main, ErrorHandle } from './AC. Routes/Routing';
 import { useState } from 'react';
-import { Contents } from './types'; // Import your Contents type
+import { Contents } from './types'; 
 
 function App() {
   const location = useLocation();
