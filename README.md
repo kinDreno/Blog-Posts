@@ -5,11 +5,6 @@ Update: Project is finish, there were features that I tried to implement and how
 <br>
 Will make another project after this one!
 <hr>
-<p>Programming Languages and Tools that were used in this project:</p>
-- Typescript
-- React.tsx
-- NPM
-<hr>
 
 - [x] Routing Parts
 - [x] Functionals
